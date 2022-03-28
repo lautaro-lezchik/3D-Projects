@@ -1,5 +1,8 @@
 /* FUENTES */
 
+html {
+    font-size: 16px; }
+
 @font-face {
     font-family: 'arkhip';
     src: url(multimedia/Arkhip_font.otf);
@@ -19,7 +22,7 @@
 /*TITULOS*/
 .titulo {
     text-align: center;
-    font-size: 40px;
+    font-size: 2.5rem;
 }
 
 .lineas{
