@@ -82,10 +82,13 @@ header {
 }
 .logoPrincipal {
   margin: 0 auto;
+  width: 70%;
+
 }
 
 .heroSection {
   margin: 4rem 0;
+  padding-bottom: 6rem;
 }
 
 .subtituloHeader {
@@ -93,16 +96,27 @@ header {
   padding-left: 20%;
 }
 
+.ubicacionDerecha{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
 /*------------------------------------------------------------------------------*/
 /*--------------------------SECCION NUESTRA MISION------------------------------*/
 /*------------------------------------------------------------------------------*/
 
+#nuestraMision {
+  background-image: url(multimedia/fondo-cubos.jpg);
+}
 /*PARRAFO 1*/
 .parrafo1 {
   text-align: center;
   width: 80%;
   margin: 0 auto;
   font-size: 1.5rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 /*CARRUSEL*/
@@ -187,6 +201,7 @@ header {
   border: 0;
   cursor: pointer;
   font-size: 16px;
+  font-family: 'Quicksand', sans-serif;
   margin: 0 20px;
   padding: 0 12px;
   text-transform: capitalize;
@@ -282,17 +297,20 @@ header {
   color: var(--amarillo);
   border-color: var(--amarillo);
   border-radius: 1rem;
-  background-color: transparent;
+  background-color: transparent; 
   font-weight: bold;
   text-decoration: none;
   padding: 0.3rem 2rem;
+  border-style: solid;
 }
 .boton a {
   text-decoration: none;
   color: var(--amarillo);
 }
-.boton:hover {
+.boton a:hover {
   color: white;
+}
+.boton:hover {
   background-color: var(--amarillo);
 }
 .botonCentrado{
@@ -331,18 +349,65 @@ header {
 /*------------------------------------------------------------------------------*/
 /*--------------------------SECCION CONTACTANOS---------------------------*/
 /*------------------------------------------------------------------------------*/
-
-.logos {
-  width: 30%;
+.contenedorContacto{
+width: 40vw;
+margin: 0 auto;
 }
 
 
-/* FOOTER */
-footer {
-  background-color: var(--amarillo);
-  height: 100px;
+.filaLogos {
+  margin:1rem 0;
+}
+
+.logos img {
+  width: 100%;
+}
+
+.logos img:hover, .logoFace img:hover {
+  transform: scale(1.1);
+}
+
+
+.logoFace img {
+  width: 85%;
+  margin-left: .5rem;
+}
+
+.botonesContacto {
+  border-color: #000;
+}
+
+.botonesContacto:hover{
+  border-color: #fff;
+}
+
+.botonesContacto a {
+  color: #000;
+  font-size: 120%;
+  font-weight: bolder;
+
+}
+
+.botonesContacto a:hover {
+  color: #fff;
+}
+
+
+/*------------------------------------------------------------------------------*/
+/*--------------------------FOOTER---------------------------*/
+/*------------------------------------------------------------------------------*/
+
+
+.footer {
+  background-color: #C0CDDA;
+  height: auto;
 }
 
 .logoFooter {
-  width: 30%;
+  width: 10%;
+}
+
+.contLogoFooter {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
 }

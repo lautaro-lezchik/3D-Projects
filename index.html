@@ -6,7 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
-    <title>Document</title>
+    <title>3D Project</title>
+    <link rel="icon" type="image/x-icon" href="multimedia/logo principal.png">
 </head>
 <body>
     <header>
@@ -19,7 +20,7 @@
                     <nav>
                         <nav class="navbar navbar-expand-lg navbar-light">
                             <div class="container-fluid">
-                                <div class="collapse navbar-collapse" id="navbarNav">
+                                <div class="collapse navbar-collapse ubicacionDerecha" id="navbarNav">
                                     <ul class="navbar-nav">
                                     <li class="nav-item">
                                         <a class="nav-link active" aria-current="page" href="#nuestraMision">Nuestra Misión</a>
@@ -54,7 +55,7 @@
                     </div> 
                     
                 </div>
-                <div class="col align-self-center">
+                <div class="col align-self-center ubicacionDerecha">
                     <img class="logoPrincipal" src="multimedia/logo principal.png" alt="logo">
                 </div>
             </div>
@@ -69,11 +70,11 @@
         <!--CARRUSEL-->
         <div class="gallery">
             <div class="gallery-container">
-                <img class="gallery-item" src="multimedia/fotogaleria1.png">
-                <img class="gallery-item" src="multimedia/fotogaleria2.png">
-                <img class="gallery-item" src="multimedia/fotogaleria3.png">
-                <img class="gallery-item" src="multimedia/fotogaleria4.png">
-                <img class="gallery-item" src="multimedia/fotogaleria5.png">
+                <img class="gallery-item gallery-item-1" src="multimedia/fotogaleria1.png">
+                <img class="gallery-item gallery-item-2" src="multimedia/fotogaleria2.png">
+                <img class="gallery-item gallery-item-3" src="multimedia/fotogaleria3.png">
+                <img class="gallery-item gallery-item-4" src="multimedia/fotogaleria4.png">
+                <img class="gallery-item gallery-item-5" src="multimedia/fotogaleria5.png">
             </div>
             <div class="gallery-controls"></div>
         </div>
@@ -84,7 +85,7 @@
 
      <!--Servicios-->
      <section id="servicios">
-        <div class="container" style="margin-top: 200px;">
+        <div class="container" style="margin-top: 3rem;">
             <div class="row align-items-center">
                 <div class="col-sm-3">
                     <hr class="lineas">
@@ -106,7 +107,7 @@
         <div class="container">
             <div class="row align-items-center justify-content-center">
 
-                <div class="col col-lg-6">
+                <div class="col col-lg-6" style="margin-top: 3rem;">
                     <img src="multimedia/fotoservicio1.png" alt="" width="90%" class="servicioImg">
                 </div>
                 <div class="col col-lg-6">
@@ -156,7 +157,7 @@
 
     <!--Proyectos-->
     <section id="proyectos">
-        <div class="container" style="margin-top: 200px;">
+        <div class="container" style="margin-top: 3rem;">
             <div class="row align-items-center">
                 <div class="col-sm-3">
                 <hr class="lineas">
@@ -207,8 +208,9 @@
               <span class="flechaCarousel"> &#60 </span>
             </button>
             <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              
+              <span class="flechaCarousel"> &gt </span>
               <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually">Next</span>
             </button>
         </div>
         
@@ -223,7 +225,7 @@
 
      <!--Contacto-->
      <section id="contacto">
-        <div class="container" style="margin-top: 200px;">
+        <div class="container" style="margin-top: 3rem;">
             <div class="row align-items-center">
                 <div class="col-sm-2">
                 <hr class="lineasAzul">
@@ -242,47 +244,49 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-4 logos align-self-center"><img src="multimedia/logoinstagram.png" alt=""></div>
-            <div class="col-8">
-                <div class="botonCentrado"> 
-                    <button class="boton fuente2">
-                        <a href="">Instagram</a> 
-                    </button>                           
-                </div> 
+        <div class="contenedorContacto">
+            <div class="row filaLogos">
+                <div class="col-4 logos align-self-center"><a href="https://www.instagram.com/3d_projects21/?utm_medium=copy_link" target="_blank"><img src="multimedia/logoinstagram.png" alt=""></a></div>
+                <div class="col-8 align-self-center">
+                    <div class="botonCentrado">
+                        <button class="boton fuente2 botonesContacto">
+                            <a href="https://www.instagram.com/3d_projects21/?utm_medium=copy_link" target="_blank">Instagram</a>
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-4 logos align-self-center"><img src="multimedia/logowpp.png" alt=""></div>
-            <div class="col-8 ">
-                <div class="botonCentrado"> 
-                    <button class="boton fuente2">
-                        <a href="">WhatsApp</a> 
-                    </button>                           
-                </div> 
+            <div class="row filaLogos">
+                <div class="col-4 logos align-self-center"><a href="https://wa.me/573107115406" target="_blank"><img src="multimedia/logowpp.png" alt=""></a></div>
+                <div class="col-8 align-self-center">
+                    <div class="botonCentrado align-self-center">
+                        <button class="boton fuente2 botonesContacto">
+                            <a href="https://wa.me/573107115406" target="_blank">WhatsApp</a>
+                        </button>
+                    </div>
+                </div>
             </div>
-        </div>
-        <div class="row">
-            <div class="col-4 logos align-self-center"><img src="multimedia/logoface.png" alt=""></div>
-            <div class="col-8">
-                <div class="botonCentrado"> 
-                    <button class="boton fuente2">
-                        <a href="">Facebook</a> 
-                    </button>                           
-                </div> 
+            <div class="row filaLogos">
+                <div class="col-4 logoFace align-self-center"><a href="https://www.facebook.com/smr.pro.3d/" target="_blank"><img src="multimedia/logoface.png" alt=""></a></div>
+                <div class="col-8 align-self-center">
+                    <div class="botonCentrado">
+                        <button class="boton fuente2 botonesContacto">
+                            <a href="https://www.facebook.com/smr.pro.3d/" target="_blank">Facebook</a>
+                        </button>
+                    </div>
+                </div>
             </div>
         </div>
 
 
     </section>
 
-    <footer>
+    <footer class="footer">
         <div class="row">
-            <div>
+            <div class="text-center contLogoFooter">
                 <img class="logoFooter" src="multimedia/LOGO-3D-PROJECTS.png" alt="logo">
             </div>
             <div>
-                <p>
+                <p class="text-center">
                     2022, 3D Projects. Todos los derechos reservados
                 </p>
             </div>
