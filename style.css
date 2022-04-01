@@ -41,13 +41,20 @@ html {
 
 /*LINEAS*/
 .lineas {
-  color: var(--amarillo);
+  background-color: #caae2b;
   height: 5px !important;
 }
 
-.lineasAzul {
-  color: var(--azulclaro);
+.line-1 {
+  height: 5px;
+  background: var(--amarillo);
+  margin: 1rem 0;
+}
+
+.line-2 {
+  background-color: var(--azulclaro);
   height: 5px !important;
+  margin: 1rem 0;
 }
 
 /*------------------------------------------------------------------------------*/
@@ -107,7 +114,8 @@ header {
 /*------------------------------------------------------------------------------*/
 
 #nuestraMision {
-  background-image: url(multimedia/fondo-cubos.jpg);
+  background-image: url(multimedia/fondo-seccionAcercaDe.jpg);
+  background-repeat: no-repeat;
 }
 /*PARRAFO 1*/
 .parrafo1 {
@@ -120,6 +128,7 @@ header {
 }
 
 /*CARRUSEL*/
+
 .gallery {
   width: 100%;
   margin-top: 100px;
@@ -132,6 +141,7 @@ header {
   margin: 0 auto;
   max-width: 1000px;
   position: relative;
+  background-image: url(multimedia/fondo-cubos-1920.png);
 }
 
 .gallery-item {
@@ -410,4 +420,15 @@ margin: 0 auto;
 .contLogoFooter {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+
+/*------------------------------------------------------------------------------*/
+/*----------------------------------RESPONSIVE----------------------------------*/
+/*------------------------------------------------------------------------------*/
+
+@media (max-width: 1024px) {
+  header {
+    background-size: contain;
+  }
 }
