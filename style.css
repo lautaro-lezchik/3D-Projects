@@ -71,6 +71,8 @@ header {
 /* BARRA DE NAVEGACION*/
 .contenedorGeneralNav {
   max-width: 1920px;
+  padding: 0%;
+
 }
 .contLogo {
   margin-top: 1rem;
@@ -83,14 +85,17 @@ header {
 .nav-item a {
   color:white!important;
   font-size: 1.3rem;
-  margin: 0 1rem;
+  margin: 0.5rem;
   font-weight: 600;
   font-family: 'Quicksand', sans-serif;
+}
+.nav-item a:hover {
+  transform: scale(1.1);
+  transition-duration: 1s;
 }
 .logoPrincipal {
   margin: 0 auto;
   width: 70%;
-
 }
 
 .heroSection {
@@ -109,6 +114,11 @@ header {
   justify-content: flex-end;
 }
 
+.contenedorHero{
+  padding: 0%;
+  margin: 0%;
+}
+
 /*------------------------------------------------------------------------------*/
 /*--------------------------SECCION NUESTRA MISION------------------------------*/
 /*------------------------------------------------------------------------------*/
@@ -125,13 +135,24 @@ header {
   font-size: 1.5rem;
   padding-top: 2rem;
   padding-bottom: 2rem;
+  margin-bottom: 100px;
 }
 
 /*CARRUSEL*/
 
+.contenedorCarousel2 {
+  width: 100vw;
+  max-width: 2900px;
+  background-image: url(multimedia/fondo-cubos-1920x695.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top center; 
+  margin-top: -50px;
+}
+
 .gallery {
+  padding-top: 125px;
   width: 100%;
-  margin-top: 100px;
 }
 
 .gallery-container {
@@ -141,7 +162,7 @@ header {
   margin: 0 auto;
   max-width: 1000px;
   position: relative;
-  background-image: url(multimedia/fondo-cubos-1920.png);
+  
 }
 
 .gallery-item {
@@ -428,7 +449,130 @@ margin: 0 auto;
 /*------------------------------------------------------------------------------*/
 
 @media (max-width: 1024px) {
-  header {
-    background-size: contain;
+  
+  /* -----GENERAL------ */
+
+  .titulo{
+    font-size:1.7rem;
   }
-}
+  /* -----NAVBAR------ */
+  header {
+    background-size: 85% 100%;
+  }
+  .logoNav {
+    width: 60%;
+    margin-left: 15%;
+    padding-top: 7%;
+  }
+  .nav-item a {
+    font-size: 1.3rem;
+    margin: 0.5rem;
+  }
+
+  /* -----HERO SECTION------ */
+  .logoPrincipal {
+    width: 80%;
+    margin-right: 0%;
+    margin-left: 0%;
+  } 
+
+
+  .tituloHeader {
+    font-size: 2.5rem;
+  }
+
+  .subtituloHeader {
+    font-size: 1.5rem;
+  }
+
+  .heroSection {
+    margin-bottom: 0;
+  }
+
+  .ubicacionDerecha{
+    justify-content: center;
+  }
+
+  /* -----NUESTRA MISION------ */
+
+  #nuestraMision {
+    background-image: url(multimedia/fondo-seccionAcercaDe.jpg);
+    background-position-x: -5rem;
+    background-repeat: no-repeat;
+  }
+
+  #nuestraMision .titulo {
+    padding-top: 5%;
+  }
+
+  .parrafo1 {
+    margin-bottom:0;
+  }
+
+    /* -----CAROUSEL 1------ */
+
+    .contenedorCarousel2 {
+      width: 90vw;
+      margin:0 auto;
+      background-size: 150%;
+      background-position-y: 25%; 
+    }
+    .gallery {
+      padding-top: 0;
+    }
+    .gallery-item {
+      height: 200px;
+      opacity: 0;
+      position: absolute;
+      transition: all 0.3s ease-in-out;
+      width: 200px;
+      z-index: 0;
+    }
+    
+    .gallery-item-1 {
+      left: 15%;
+      opacity: 0.4;
+      transform: translateX(-50%);
+      height: 100px;
+      width: 100px;
+    }
+    
+    .gallery-item-2,
+    .gallery-item-4 {
+      height: 150px;
+      opacity: 1;
+      width: 150px;
+      z-index: 1;
+    }
+    
+        
+    .gallery-item-3 {
+      height: 250px;
+      opacity: 1;
+      width: 250px;
+      z-index: 2;
+    }
+    
+    .gallery-item-4 {
+      left: 70%;
+      transform: translateX(-50%);
+    }
+    
+    .gallery-item-5 {
+      left: 85%;
+      opacity: 0.4;
+      transform: translateX(-50%);
+      height: 100px;
+      width: 100px;
+    }
+
+    .gallery-controls {
+      margin-top:0;
+    }
+    
+     /* -----NUESTROS SERVICIOS------ */
+
+    .servicioImg {
+      width:40vw;
+    }
+  }
