@@ -80,6 +80,7 @@ header {
 .logoNav {
   width: 20%;
   margin-left: 5%;
+  padding-top: 3%;
 }
 
 .nav-item a {
@@ -117,6 +118,18 @@ header {
 .contenedorHero{
   padding: 0%;
   margin: 0%;
+}
+
+.nav--colapsado {
+  display: flex;
+  flex-direction: column; 
+  justify-content: flex-end;
+  margin-left: 7rem;
+  padding-top: 0.4rem;
+}
+
+.menuBurger{
+  display: none; 
 }
 
 /*------------------------------------------------------------------------------*/
@@ -377,7 +390,8 @@ header {
   color:var(--azuloscuro);
   font-size:2rem;
 }
-/*------------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------*/
 /*--------------------------SECCION CONTACTANOS---------------------------*/
 /*------------------------------------------------------------------------------*/
 .contenedorContacto{
@@ -460,9 +474,7 @@ margin: 0 auto;
     background-size: 85% 100%;
   }
   .logoNav {
-    width: 60%;
-    margin-left: 15%;
-    padding-top: 7%;
+    display: none;
   }
   .nav-item a {
     font-size: 1.3rem;
@@ -545,7 +557,7 @@ margin: 0 auto;
       z-index: 1;
     }
     
-        
+
     .gallery-item-3 {
       height: 250px;
       opacity: 1;
@@ -575,4 +587,94 @@ margin: 0 auto;
     .servicioImg {
       width:40vw;
     }
+  }
+
+  @media (max-width: 767px) {
+
+    /* GENERAL */
+    .titulo {
+      font-size: 1.3rem;
+    }
+
+  /* -----NAVBAR------ */
+  header {
+    background-size: 80% 100%;
+  }
+  .logoNav {
+    width: 35%;
+    margin-left: 5%;
+    padding-top: 2%;
+  }
+
+  .nav-item a {
+    color:#000!important;
+  }
+
+  .menuNormal {
+    display:none;
+  }
+  .menuBurger{
+    display:block;
+  }
+  /* -----HERO SECTION------ */
+  .logoPrincipal {
+    width: 100%;
+  }
+  .heroSection {
+    margin-top: 0rem;
+    padding-bottom: 3rem;
+    padding-top: 1rem;
+  } 
+
+  
+
+    /*  NUESTRA MISION */
+    #nuestraMision {
+      background-position-x: -10rem;
+    }
+    .parrafo1 {
+      font-size:1rem;
+    }
+
+      /* -----CAROUSEL 1------ */
+      
+      .gallery-item-3 {
+        height: 200px;
+        width: 200px;
+      }
+      .gallery-controls {
+        margin-top:-3rem;
+      }
+      .contenedorCarousel2 {
+        background-position-y: 63%; 
+        background-size: 200%;
+        margin-top: -60px;
+      }
+
+        /*  NUESTROS SERVICIOS */
+
+        .servicioImg {
+          width:40vw;
+        }
+        .nombreServicio {
+          font-size: 1rem;
+        }
+
+         /*  CONTACTO */
+
+        .logos img {
+          width: 240%;
+          margin-left: -4rem;
+        }
+
+        .logoFace img {
+          width: 210%;
+          margin-left: -3.7rem;
+        }
+
+
+
+
+
+
   }
