@@ -2,6 +2,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 
+* {
+  margin: 0;
+  padding: 0; }
+
 html {
   font-size: 16px;
 }
@@ -129,7 +133,16 @@ header {
 }
 
 .menuBurger{
-  display: none; 
+  display: none;
+}
+
+.menuBurgerBoton{
+  border-color: white;
+  color: white;
+}
+
+.botonHero{
+  padding-left: 20%;
 }
 
 /*------------------------------------------------------------------------------*/
@@ -139,6 +152,7 @@ header {
 #nuestraMision {
   background-image: url(multimedia/fondo-seccionAcercaDe.jpg);
   background-repeat: no-repeat;
+  background-size: 30% 80%;
 }
 /*PARRAFO 1*/
 .parrafo1 {
@@ -511,6 +525,7 @@ margin: 0 auto;
     background-image: url(multimedia/fondo-seccionAcercaDe.jpg);
     background-position-x: -5rem;
     background-repeat: no-repeat;
+    background-size: 60% 100%;
   }
 
   #nuestraMision .titulo {
@@ -630,7 +645,7 @@ margin: 0 auto;
 
     /*  NUESTRA MISION */
     #nuestraMision {
-      background-position-x: -10rem;
+      background-size: 80% 100%;
     }
     .parrafo1 {
       font-size:1rem;
@@ -671,10 +686,4 @@ margin: 0 auto;
           width: 210%;
           margin-left: -3.7rem;
         }
-
-
-
-
-
-
   }
